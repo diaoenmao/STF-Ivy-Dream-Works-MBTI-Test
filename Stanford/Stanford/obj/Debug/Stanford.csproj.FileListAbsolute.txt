@@ -1,0 +1,52 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\Stanford.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\Stanford.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\Stanford.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.Providers.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\WebGrease.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\obj\Debug\Stanford.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\obj\Debug\Stanford.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Stanford\Stanford\obj\Debug\Stanford.pdb
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\Stanford.dll.config
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\Stanford.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\Stanford.pdb
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\Antlr3.Runtime.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\EntityFramework.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\Microsoft.Web.Infrastructure.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\Newtonsoft.Json.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.Mvc.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.Optimization.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.Providers.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.Razor.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.WebPages.Deployment.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.WebPages.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.WebPages.Razor.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\WebGrease.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\EntityFramework.xml
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\Newtonsoft.Json.xml
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.Mvc.xml
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.Razor.xml
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.WebPages.xml
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.WebPages.Deployment.xml
+D:\GitHub\斯坦福\斯坦福\Stanford\bin\System.Web.WebPages.Razor.xml
+D:\GitHub\斯坦福\斯坦福\Stanford\obj\Debug\Stanford.csprojResolveAssemblyReference.cache
+D:\GitHub\斯坦福\斯坦福\Stanford\obj\Debug\Stanford.dll
+D:\GitHub\斯坦福\斯坦福\Stanford\obj\Debug\Stanford.pdb
