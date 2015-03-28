@@ -16,7 +16,8 @@ Your name: <b><%= Html.Encode(ViewData["name"])%></b>
 <p>
 Your favorite color: <b><%= Html.Encode(ViewData["favColor"]) %></b>
 </p>
-<% if (ViewData["bookType"].Equals(true))
+
+<%--<% if (ViewData["bookType"].Equals(true))
    { %>
 <p>You read more <b>fiction</b> than non-fiction.</p>
 <% }
@@ -24,6 +25,6 @@ Your favorite color: <b><%= Html.Encode(ViewData["favColor"]) %></b>
    { %>
 <p>You read more <b>non-fiction</b> than fiction.</p>
 <% } %>
-Your favorite pet: <b><%= Html.Encode(ViewData["pet"]) %></b>
+Your favorite pet: <b><%= Html.Encode(ViewData["pet"]) %></b>--%>
 
 </html>

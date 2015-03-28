@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using Stanford.Models;
 namespace Stanford.Controllers
 {
     public class HomeController : Controller
     {
         //
         // GET: /Home/
+        List<Question> questionList = new List<Question>();
 
         public ActionResult Index()
         {
@@ -18,27 +19,19 @@ namespace Stanford.Controllers
 
         public ActionResult Test()
         {
-            ViewData["Message"] = "Welcome to ASP.NET MVC!";
+            ViewData["Message"] = "斯坦福测试";
+            
+            questionList.Add(new Question("当你要外出一整天，你会", "计划你要做什么和在什么时候做", "说去就去"));
+            questionList.Add(new Question("你认为自己是一个", "较为随兴所至的人", "较为有条理的人"));
 
-            List<string> petList = new List<string>();
-            petList.Add("Dog");
-            petList.Add("Cat");
-            petList.Add("Hamster");
-            petList.Add("Parrot");
-            petList.Add("Gold fish");
-            petList.Add("Mountain lion");
-            petList.Add("Elephant");
-
-            ViewData["Pets"] = new SelectList(petList);
-            return View();
+            return View(questionList.ToList());
         }
 
-        public ActionResult HandelForm(string name, string favColor, Boolean bookType, string pets)
+        public ActionResult Result(string favColor)
         {
-            ViewData["name"] = name;
             ViewData["favColor"] = favColor;
-            ViewData["bookType"] = bookType;
-            ViewData["pet"] = pets;
+            //ViewData["bookType"] = bookType;
+            //ViewData["pet"] = pets;
 
             return View("Result");
         }

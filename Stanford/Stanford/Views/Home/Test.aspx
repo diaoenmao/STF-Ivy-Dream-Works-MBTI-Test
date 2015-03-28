@@ -8,31 +8,29 @@
     <meta name="viewport" content="width=device-width" />
     <title>Test</title>
 </head>
-
-<h2>Test</h2>
-
-
+<body>
 
 <h2><%= Html.Encode(ViewData["Message"]) %></h2>
 <br /><br />
-<% using (Html.BeginForm("HandelForm", "Home")) %>
-<% { %>
-    Enter your name: <%= Html.TextBox("name") %>
-    <br /><br />
+        <div>
+        <% var V = Model; %>
+        <% foreach (var a in V)
+        { %>
+           <b>Question:-   </b>   <%= a.Q %>
+           <b>A:-</b>  <%= a.A%> <br />
+           <b>B:-</b>  <%= a.B%> <br />
+        <%} %>
+ 
+ 
+    </div>
+<form action="/Home/Result" method="post">
     Select your favorite color:<br />
-    <%= Html.RadioButton("favColor", "Blue", true) %> Blue <br />
-    <%= Html.RadioButton("favColor", "Purple", false)%> Purple <br />
-    <%= Html.RadioButton("favColor", "Red", false)%> Red <br />
-    <%= Html.RadioButton("favColor", "Orange", false)%> Orange <br />
-    <%= Html.RadioButton("favColor", "Yellow", false)%> Yellow <br />
-    <%= Html.RadioButton("favColor", "Brown", false)%> Brown <br />
-    <%= Html.RadioButton("favColor", "Green", false)%> Green 
+    <input type="radio" name="favColor" value="Blue">Blue<br />
+    <input type="radio" name="favColor" value="Purple">Purple<br />
+    <input type="radio" name="favColor" value="Red">Red<br />
     <br /><br />
-    <%= Html.CheckBox("bookType") %> I read more fiction than non-fiction.<br />
-    <br /><br />
-    My favorite pet: <%= Html.DropDownList("pets") %>
-    <br /><br />
-    <input type="submit" value="Submit" />
-<% } %>
+    <input type="submit" value="下一题" />
+</form> 
 
+</body>
 </html>

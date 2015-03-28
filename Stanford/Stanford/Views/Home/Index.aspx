@@ -8,9 +8,9 @@
     <title>斯坦福测验</title>
 </head>
 <body>
-    <h2>FormResults</h2>
+    <h2>斯坦福测验</h2>
     <div>
-        <%=Html.ActionLink("Test", "Test")%>
+        <%=Html.ActionLink("测试", "Test")%>
     </div>
 </body>
 </html>
