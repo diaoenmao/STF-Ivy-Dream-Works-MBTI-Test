@@ -1,4 +1,7 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
 
 <!DOCTYPE html>
 
@@ -11,18 +14,8 @@
 <body>
 
 <h2><%= Html.Encode(ViewData["Message"]) %></h2>
-<br /><br />
-        <div>
-        <% var V = Model; %>
-        <% foreach (var a in V)
-        { %>
-           <b>Question:-   </b>   <%= a.Q %>
-           <b>A:-</b>  <%= a.A%> <br />
-           <b>B:-</b>  <%= a.B%> <br />
-        <%} %>
- 
- 
-    </div>
+
+
 <form action="/Home/Result" method="post">
     Select your favorite color:<br />
     <input type="radio" name="favColor" value="Blue">Blue<br />
