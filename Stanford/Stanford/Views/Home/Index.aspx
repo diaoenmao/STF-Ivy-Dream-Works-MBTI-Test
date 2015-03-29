@@ -6,6 +6,7 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width" />
     <title>斯坦福测验</title>
+    <meta name="description" content="The description of my page" />
 </head>
 <body>
     <h2>斯坦福测验</h2>

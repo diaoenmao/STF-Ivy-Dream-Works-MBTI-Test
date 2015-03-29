@@ -27,5 +27,9 @@ namespace Stanford.Models
         {
             return qlist[idx].B;
         }
+        public List<Question> getList()
+        {
+            return qlist;
+        }
     }
 }

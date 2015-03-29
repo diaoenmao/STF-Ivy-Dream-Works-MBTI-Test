@@ -3,15 +3,16 @@
 <!DOCTYPE html>
 
 <html>
-<body>
+
 <head runat="server">
     <meta name="viewport" content="width=device-width" />
     <title>Result</title>
 </head>
-
+<body>
 <h2>FormResults</h2>
 <p>
-Your choise: <b><%= Html.Encode(ViewData["choice"]) %></b>
+Your choice for q1: <b><%= Html.Encode(ViewData["q1"]) %></b>
+Your choice for q2: <b><%= Html.Encode(ViewData["q2"]) %></b>
 </p>
 
 <%--<% if (ViewData["bookType"].Equals(true))

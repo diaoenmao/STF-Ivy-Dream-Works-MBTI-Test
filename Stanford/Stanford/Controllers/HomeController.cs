@@ -21,17 +21,17 @@ namespace Stanford.Controllers
         public ActionResult Test()
         {
             ViewData["Message"] = "斯坦福测试";
-            ViewBag.Question = questionList;
             ViewData["Q"] = questionList.getQ(0);
             ViewData["A"] = questionList.getA(0);
             ViewData["B"] = questionList.getB(0);
-            return View();
+            ViewData["i"] = "0";
+            return View(questionList.getList().ToList());
         }
 
-
-        public ActionResult Result(string choice)
+        public ActionResult Result(string q1, string q2)
         {
-            ViewData["choice"] = choice;
+            ViewData["q1"] = q1;
+            ViewData["q2"] = q2;
             //ViewData["bookType"] = bookType;
             //ViewData["pet"] = pets;
 
