@@ -11,7 +11,7 @@ namespace Stanford.Controllers
     {
         //
         // GET: /Home/
-        List<Question> questionList = new List<Question>();
+        QuestionList questionList = new QuestionList();
 
         public ActionResult Index()
         {
@@ -21,20 +21,17 @@ namespace Stanford.Controllers
         public ActionResult Test()
         {
             ViewData["Message"] = "斯坦福测试";
-
+            ViewBag.Question = questionList;
+            ViewData["Q"] = questionList.getQ(0);
+            ViewData["A"] = questionList.getA(0);
+            ViewData["B"] = questionList.getB(0);
             return View();
         }
 
-        public JsonResult Question()
-        {
-            questionList.Add(new Question("当你要外出一整天，你会", "计划你要做什么和在什么时候做", "说去就去"));
-            questionList.Add(new Question("你认为自己是一个", "较为随兴所至的人", "较为有条理的人"));
-            return this.Json(questionList, JsonRequestBehavior.AllowGet);
-        }
 
-        public ActionResult Result(string favColor)
+        public ActionResult Result(string choice)
         {
-            ViewData["favColor"] = favColor;
+            ViewData["choice"] = choice;
             //ViewData["bookType"] = bookType;
             //ViewData["pet"] = pets;
 

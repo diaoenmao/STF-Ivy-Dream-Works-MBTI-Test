@@ -1,7 +1,8 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-
-<script type="text/javascript" src="js/script.js"></script>
+    <script src="<%= Url.Content("~/Scripts/MicrosoftAjax.debug.js") %>" 
+		type="text/javascript"></script>  
+    <script src="<%= Url.Content("~/Scripts/MicrosoftMvcAjax.debug.js") %>" 
+		type="text/javascript"></script>
 
 <!DOCTYPE html>
 
@@ -15,12 +16,10 @@
 
 <h2><%= Html.Encode(ViewData["Message"]) %></h2>
 
-
 <form action="/Home/Result" method="post">
-    Select your favorite color:<br />
-    <input type="radio" name="favColor" value="Blue">Blue<br />
-    <input type="radio" name="favColor" value="Purple">Purple<br />
-    <input type="radio" name="favColor" value="Red">Red<br />
+    <%=ViewData["Q"]%><br />
+    <input type="radio" name="choice" value="A"><%=ViewData["A"]%><br />
+    <input type="radio" name="choice" value="B"><%=ViewData["B"]%><br />
     <br /><br />
     <input type="submit" value="下一题" />
 </form> 

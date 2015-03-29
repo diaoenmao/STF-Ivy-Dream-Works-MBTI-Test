@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html>
-
+<body>
 <head runat="server">
     <meta name="viewport" content="width=device-width" />
     <title>Result</title>
@@ -11,10 +11,7 @@
 
 <h2>FormResults</h2>
 <p>
-Your name: <b><%= Html.Encode(ViewData["name"])%></b>
-</p>
-<p>
-Your favorite color: <b><%= Html.Encode(ViewData["favColor"]) %></b>
+Your choise: <b><%= Html.Encode(ViewData["choice"]) %></b>
 </p>
 
 <%--<% if (ViewData["bookType"].Equals(true))
@@ -26,5 +23,5 @@ Your favorite color: <b><%= Html.Encode(ViewData["favColor"]) %></b>
 <p>You read more <b>non-fiction</b> than fiction.</p>
 <% } %>
 Your favorite pet: <b><%= Html.Encode(ViewData["pet"]) %></b>--%>
-
+</body>
 </html>
