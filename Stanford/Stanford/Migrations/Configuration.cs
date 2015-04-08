@@ -33,6 +33,7 @@ namespace Stanford.Migrations
                     p => p.Id,
 
                     new Question {Q = "q1", A = "a1", B = "b1"},
+                    new Question {Q = "q1", A = "a1", B = "b1"},
                     new Question {Q = "q2", A = "a2", B = "b2"}
 
 
