@@ -21,8 +21,8 @@
 { %>     
     <li>
     <%=Question.Q%><br />
-    <input type="radio" name="q<%=i%>" value="A"><%=Question.A%><br />
-    <input type="radio" name="q<%=i%>" value="B"><%=Question.B%><br />
+    <input type="radio" name="q<%=i%>" value="0"><%=Question.A%>
+    <input type="radio" name="q<%=i%>" value="1"><%=Question.B%><br />
     <br />
     </li>
     <%  i = i +1;%>
