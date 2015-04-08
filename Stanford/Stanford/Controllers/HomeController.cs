@@ -4,11 +4,15 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Stanford.Models;
-using System.Web.Script.Serialization;
+using Stanford.Context;
 namespace Stanford.Controllers
 {
     public class HomeController : Controller
     {
+
+
+
+        QuestionContext questionDb = new QuestionContext();
         //
         // GET: /Home/
         QuestionList questionList = new QuestionList();
@@ -22,7 +26,10 @@ namespace Stanford.Controllers
         public ActionResult Test()
         {
             ViewData["Message"] = "斯坦福测试";
-            return View(questionList.getList().ToList());
+
+            return View(questionDb.Questions.ToList());
+
+            //return View(questionList.getList().ToList());
         }
 
         public ActionResult Result(

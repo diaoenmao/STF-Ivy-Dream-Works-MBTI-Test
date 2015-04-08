@@ -18,5 +18,7 @@ namespace Stanford.Models
             this.B = B;
         }
 
+        public Question(){}
+
     }
 }
