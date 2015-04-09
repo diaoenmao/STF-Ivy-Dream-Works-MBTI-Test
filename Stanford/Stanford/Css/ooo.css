@@ -1,0 +1,38 @@
+h1 {
+	color: blue;
+	margin: 0px;
+	font-size: 30px;
+}
+
+body{
+	height: 50%;
+	width: 100%;
+	/*border: 3px solid 	black;*/
+}
+
+.description {
+	height: 70%;
+	width: 70%;
+	/*border: 3px solid green;*/
+	margin: auto;
+}
+
+* {
+	/*border: 1px solid red;*/
+	font-family: "Microsoft YaHei" ! important;
+}
+
+ul{
+	/*margin: 100% 100% 100% 100%;*/
+	padding: 0px;
+}
+
+li{
+	margin: 0px 0px 0px 20px;
+	height: 20px;
+}
+
+li p{
+	font-size: 15px
+
+}

@@ -213,6 +213,7 @@
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Css\ooo.css" />
     <Content Include="Views\Home\Result.aspx" />
     <Content Include="Views\Home\Test.aspx" />
     <Content Include="Views\Home\Index.aspx" />

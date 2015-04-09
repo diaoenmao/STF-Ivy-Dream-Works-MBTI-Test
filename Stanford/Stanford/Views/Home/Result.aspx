@@ -9,11 +9,13 @@
     <title>Result</title>
 </head>
 <body>
-<h2>FormResults</h2>
-<p>
-你的性格类型: <b><%= Html.Encode(ViewData["type"]) %></b><br />
-特征: <br /><b><%= Server.HtmlDecode(Html.Encode(ViewData["description"])) %></b>
-</p>
+    <h2>FormResults</h2>
+    <p>
+        你的性格类型: <b><%= Html.Encode(ViewData["type"]) %></b><br />
+        特征:
+        <br />
+        <b><%= Server.HtmlDecode(Html.Encode(ViewData["description"])) %></b>
+    </p>
 
 </body>
 </html>
