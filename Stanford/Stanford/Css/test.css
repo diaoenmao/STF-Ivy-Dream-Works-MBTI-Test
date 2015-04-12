@@ -1,0 +1,35 @@
+﻿body {
+
+
+
+
+
+
+}
+
+
+
+*{
+    border: 1px solid red;
+    
+
+
+}
+
+ol{
+    padding-top: 5px;
+
+
+
+
+}
+
+li{
+    padding-top: 3px;
+    line-height: 1.7em;
+}
+
+div{
+    padding-top: 20px;
+
+}

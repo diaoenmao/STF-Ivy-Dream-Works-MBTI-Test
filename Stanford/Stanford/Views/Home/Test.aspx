@@ -7,6 +7,7 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width" />
     <title>Test</title>
+    <link href="../../Css/test.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -22,9 +23,10 @@
                { %>
             <li>
                 <%=Question.Q%><br />
-                <input type="radio" name="q<%=i%>" value="0" required><%=Question.A%>
-                <input type="radio" name="q<%=i%>" value="1" required><%=Question.B%><br />
-                <br />
+                <div>
+                    <input type="radio" name="q<%=i%>" value="0" required><%=Question.A%><br />
+                    <input type="radio" name="q<%=i%>" value="1" required><%=Question.B%><br />
+                </div>
             </li>
             <%  i = i + 1;%>
             <%} %>
