@@ -7,15 +7,19 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width" />
     <title>Result</title>
+    <link href="../../Css/result.css" rel="stylesheet" />
 </head>
 <body>
     <h2>FormResults</h2>
-    <p>
-        你的性格类型: <b><%= Html.Encode(ViewData["type"]) %></b><br />
-        特征:
-        <br />
-        <b><%= Server.HtmlDecode(Html.Encode(ViewData["description"])) %></b>
-    </p>
+    <div>
+        <p>测试结果 : <b><%= Html.Encode(ViewData["type"]) %></b><p/>
+        <div class =" character">
+            <p>
+                <pre>共同特征 : <%= Server.HtmlDecode(Html.Encode(ViewData["description"])) %></pre>
+                <pre>典型职业 : </pre>
+            </p>
+        </div>
+    </div>
 
 </body>
 </html>

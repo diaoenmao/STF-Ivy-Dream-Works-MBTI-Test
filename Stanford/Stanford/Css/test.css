@@ -10,8 +10,8 @@
 
 
 *{
-    border: 1px solid red;
-    
+    /*border: 1px solid red;*/
+    font-family: "Microsoft YaHei" ! important;
 
 
 }
@@ -30,6 +30,6 @@ li{
 }
 
 div{
-    padding-top: 20px;
-
+    padding-top: 10px;
+    
 }

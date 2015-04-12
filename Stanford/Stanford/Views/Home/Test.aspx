@@ -22,7 +22,7 @@
             <% foreach (var Question in V)
                { %>
             <li>
-                <%=Question.Q%><br />
+                <p><%=Question.Q%></p>
                 <div>
                     <input type="radio" name="q<%=i%>" value="0" required><%=Question.A%><br />
                     <input type="radio" name="q<%=i%>" value="1" required><%=Question.B%><br />

@@ -1,0 +1,18 @@
+﻿body
+{
+}
+
+
+* {
+	/*border: 1px solid red;*/
+	font-family: "Microsoft YaHei" ! important;
+}
+
+
+.character{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+
