@@ -38,6 +38,8 @@ namespace Stanford.Models
                        "                5.照设定成效来作出决策且不畏阻挠与闲言会坚定为之。<br />" +
                        "                6.重视传统与忠诚。<br />" +
                        "                7.传统性的思考者或经理。");
+                output.Add("工商业领域、政府机构金融银行业、政府机构、技术领域、医务领域");
+
                 return output;
             }
             else if (result.Equals("ISFJ"))
@@ -50,6 +52,7 @@ namespace Stanford.Models
                        "                5.兴趣通常不在于科技方面。对细节事务有耐心。<br />" +
                        "                6.忠诚、考虑周到、知性且会关切他人感受。<br />" +
                        "                7.致力于创构有序及和谐的工作与家庭环境。");
+                output.Add("无明显领域特征、医护领域、消费类商业、服务业领域");
                 return output;
             }
             else if (result.Equals("INFJ"))
@@ -64,6 +67,7 @@ namespace Stanford.Models
                        "                7.想了解什么能激励别人及对他人具洞察力。<br />" +
                        "                8.光明正大且坚信其价值观。<br />" +
                        "                9.有组织且果断地履行其愿景。");
+                output.Add("咨询、教育、科研等领域文化、艺术、设计等领域");
                 return output;
             }
             else if (result.Equals("INTJ"))

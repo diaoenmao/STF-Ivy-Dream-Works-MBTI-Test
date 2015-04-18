@@ -24,8 +24,10 @@
             <li>
                 <p><%=Question.Q%></p>
                 <div>
-                    <input type="radio" name="q<%=i%>" value="0" required><%=Question.A%><br />
-                    <input type="radio" name="q<%=i%>" value="1" required><%=Question.B%><br />
+                    <!-- deleted required for testing-->
+
+                    <input type="radio" name="q<%=i%>" value="0"><%=Question.A%><br />
+                    <input type="radio" name="q<%=i%>" value="1"><%=Question.B%><br />
                 </div>
             </li>
             <%  i = i + 1;%>

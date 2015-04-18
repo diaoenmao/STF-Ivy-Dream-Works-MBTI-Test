@@ -16,7 +16,7 @@
         <div class =" character">
             <p>
                 <pre>共同特征 : <%= Server.HtmlDecode(Html.Encode(ViewData["description"])) %></pre>
-                <pre>典型职业 : </pre>
+                <pre>适合领域 :   </pre>
             </p>
         </div>
     </div>
