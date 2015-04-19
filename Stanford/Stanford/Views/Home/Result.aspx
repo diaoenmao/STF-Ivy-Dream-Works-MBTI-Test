@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
+<%@ Import Namespace="System.Text" %>
 <!DOCTYPE html>
 
 <html>
@@ -12,12 +13,24 @@
 <body>
     <h2>FormResults</h2>
     <div>
-        <p>测试结果 : <b><%= Html.Encode(ViewData["type"]) %></b><p/>
-        <div class =" character">
-            <p>
-                <pre>共同特征 : <%= Server.HtmlDecode(Html.Encode(ViewData["description"])) %></pre>
-                <pre>适合领域 : <%= Server.HtmlDecode(Html.Encode(ViewData["area"])) %></pre>
-            </p>
+        <p>
+            测试结果 : <b><%= Html.Encode(ViewData["type"]) %></b>
+        <p />
+        <div class="character">
+            <div>
+                <p>共同特征 : </p>
+                <pre> <%= Server.HtmlDecode(Html.Encode(ViewData["description"])) %></pre>
+            </div>
+
+            <div>
+                <p>适合领域 : </p>
+                <pre> <%= Server.HtmlDecode(Html.Encode(ViewData["area"])) %></pre>
+            </div>
+
+            <div>
+                <p>适合职业 : </p>
+                <pre><%= Server.HtmlDecode(Html.Encode(ViewData["job"])) %></pre>
+            </div>
         </div>
     </div>
 

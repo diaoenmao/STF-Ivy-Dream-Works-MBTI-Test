@@ -12,7 +12,21 @@
 .character{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    width: 30%;
+
 }
 
+pre{
+    white-space: pre-wrap;
+}
 
+.job:hover{
+    color:red;
+    
+}
 
+.job{
+    white-space:nowrap;
+    float: left;
+
+}
