@@ -86,6 +86,7 @@ namespace Stanford.Controllers
             List<String> output = processor.process(answerList);
             ViewData["type"] = output[0];
             ViewData["description"] = output[1];
+            ViewData["area"] = output[2];
             return View("Result");
         }
     }

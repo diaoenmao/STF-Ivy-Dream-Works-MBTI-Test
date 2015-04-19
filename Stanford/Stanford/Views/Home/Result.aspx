@@ -16,7 +16,7 @@
         <div class =" character">
             <p>
                 <pre>共同特征 : <%= Server.HtmlDecode(Html.Encode(ViewData["description"])) %></pre>
-                <pre>适合领域 :   </pre>
+                <pre>适合领域 : <%= Server.HtmlDecode(Html.Encode(ViewData["area"])) %></pre>
             </p>
         </div>
     </div>

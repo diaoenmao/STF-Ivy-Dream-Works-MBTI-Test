@@ -77,6 +77,7 @@ namespace Stanford.Models
                       "                2.有宏大的愿景且能快速在众多外界事件中找出有意义的模范。<br />" +
                       "                3.对所承负职务，具良好能力于策划工作并完成。<br />" +
                       "                4.具怀疑心、挑剔性、独立性、果决，对专业水准及绩效要求高。");
+                output.Add("科研、科技应用技术咨询、管理咨询、金融、投资领域、创造性行业");
                 return output;
             }
             else if (result.Equals("ISTP"))
@@ -86,6 +87,7 @@ namespace Stanford.Models
                        "                2.有兴趣于探索原因及效果，技术事件是为何及如何运作且使用逻辑的原理组构事实、重视效能。<br />" +
                        "                3.擅长于掌握问题核心及找出解决方式。<br />" +
                        "                4.分析成事的缘由且能实时由大量资料中找出实际问题的核心。");
+                output.Add("技术领域、证券、金融业贸易、商业领域、户外、运动、艺术等领域");
                 return output;
             }
             else if (result.Equals("ISFP"))
@@ -96,6 +98,7 @@ namespace Stanford.Models
                        "                3.无意于领导却常是忠诚的追随者。<br />" +
                        "                4.办事不急躁，安于现状无意于以过度的急切或努力破坏现况，且非成果导向。<br />" +
                        "                5.喜欢有自有的空间及照自订的时程办事。");
+                output.Add("手工艺、艺术领域医护领域 商业、服务业领域");
                 return output;
             }
             else if (result.Equals("INFP"))
@@ -108,6 +111,7 @@ namespace Stanford.Models
                        "                5.具想了解及发展他人潜能的企图。想作太多且作事全神贯注。<br />" +
                        "                6.对所处境遇及拥有不太在意。<br />" +
                        "                7.具适应力、有弹性除非价值观受到威胁。");
+                output.Add("创作性、艺术类教育、研究、咨询类");
                 return output;
             }
             else if (result.Equals("INTP"))
@@ -119,6 +123,7 @@ namespace Stanford.Models
                        "                4.最有兴趣于创意事务及特定工作，对聚会与闲聊无　大兴趣。<br />" +
                        "                5.追求可发挥个人强烈兴趣的生涯。<br />" +
                        "                6.追求发展对有兴趣事务之逻辑解释。");
+                output.Add("计算机技术、理论研究、学术领域专业领域、创造性领域");
                 return output;
             }
             else if (result.Equals("ESTP"))
@@ -130,6 +135,7 @@ namespace Stanford.Models
                        "                4.具适应性、容忍度、务实性；投注心力于会很快具　成效工作。<br />" +
                        "                5.不喜欢冗长概念的解释及理论。<br />" +
                        "                6.最专精于可操作、处理、分解或组合的真实事务。");
+                output.Add("贸易、商业、某些特殊领域服务业 金融证券业 娱乐、体育、艺术领域");
                 return output;
             }
             else if (result.Equals("ESFP"))
@@ -140,6 +146,7 @@ namespace Stanford.Models
                        "                3.知晓事件未来的发展并会热列参与。<br />" +
                        "                4.最擅长于人际相处能力及具备完备常识，很有弹性能立即　适应他人与环境。<br />" +
                        "                5.对生命、人、物质享受的热爱者。");
+                output.Add("消费类商业、服务业领域广告业、娱乐业领域、旅游业、社区服务等其他领域");
                 return output;
             }
             else if (result.Equals("ENFP"))
@@ -151,6 +158,7 @@ namespace Stanford.Models
                        "                4.依赖能改善的能力而无须预作规划准备。<br />" +
                        "                5.为达目的常能找出强制自己为之的理由。<br />" +
                        "                6.即兴执行者。");
+                output.Add("广告创意、广告撰稿人，市场营销和宣传策划、市场调研人员、艺术指导、公关专家、公司对外发言人等");
                 return output;
             }
             else if (result.Equals("ENTP"))
@@ -163,6 +171,7 @@ namespace Stanford.Models
                        "                5.兴趣多元，易倾向于转移至新生的兴趣。<br />" +
                        "                6.对所想要的会有技巧地找出逻辑的理由。<br />" +
                        "                7.长于看清础他人，有智能去解决新或有挑战的问题。");
+                output.Add("投资顾问、项目策划、投资银行、自我创业市场营销、创造性领域、公共关系、政治");
                 return output;
             }
             else if (result.Equals("ESTJ"))
@@ -174,6 +183,7 @@ namespace Stanford.Models
                        "                4.具决断力、关注细节且很快作出决策—优秀行政者。<br />" +
                        "                5.会忽略他人感受。<br />" +
                        "                6.喜作领导者或企业主管。");
+                output.Add("无明显领域特征");
                 return output;
             }
             else if (result.Equals("ESFJ"))
@@ -185,6 +195,7 @@ namespace Stanford.Models
                        "                4.给予鼓励及称许会有更佳工作成效。<br />" +
                        "                5.最有兴趣于会直接及有形影响人们生活的事务。<br />" +
                        "                6.喜欢与他人共事去精确且准时地完成工作。");
+                output.Add("无明显领域特征");
                 return output;
             }
             else if (result.Equals("ENFJ"))
@@ -196,6 +207,7 @@ namespace Stanford.Models
                        "                4.爱交际、受欢迎及富同情心。<br />" +
                        "                5.对称许及批评很在意。<br />" +
                        "                6.喜欢带引别人且能使别人或团体发挥潜能。");
+                output.Add("培训、咨询、教育新闻传播、公共关系、文化艺术");
                 return output;
             }
             else if (result.Equals("ENTJ"))
@@ -207,6 +219,7 @@ namespace Stanford.Models
                        "                4.乐于经常吸收新知且能广开信息管道。<br />" +
                        "                5.易生过度自信，会强于表达自已创见。<br />" +
                        "                6.喜于长程策划及目标设定。");
+                output.Add("工商业、政界、金融和投资领域管理咨询、培训、专业性领域");
                 return output;
             }
             return null;
