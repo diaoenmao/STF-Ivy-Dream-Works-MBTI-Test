@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
+
+
 <%@ Import Namespace="System.Text" %>
 <!DOCTYPE html>
 
@@ -33,6 +35,14 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <asp:Image ID="ImagePreview" runat="server"  Width="62px" Height="62px" />
+    <script>ImagePreview.Attributes.Item("onMouseOver") = "javascript:window.open('localhost','newWindow','width=200,height=200')";</script>
+
+
 
 </body>
 </html>
