@@ -1,0 +1,22 @@
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:Button ID="Button1" runat="server" Text="Button" />
+
+
+
+    <div id="test_div" style="display: none; width: 200px; height: 300px;" onmouseout="showDiv(false);">
+        <asp:Image ID="Image1" imageURL="http://www.themelab.com/wp-content/uploads/smiley.jpg" runat ="server" />
+    </div>
+
+    <asp:Panel ID="Panel1" runat="server">
+        111<br/>
+        <asp:Button ID="Button2" onmouseover="showDiv(true);" runat="server" Text="Button" />
+    </asp:Panel>
+   
+    <script>
+        function showDiv(display) {
+            if (display) { document.getElementById('test_div').style.display = 'block'; }
+            else { document.getElementById('test_div').style.display = 'none'; }
+        }
+    </script>
+    
+</asp:Content>
