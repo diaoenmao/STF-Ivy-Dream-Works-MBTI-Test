@@ -12,7 +12,7 @@
     <title>Result</title>
     <link href="../../Css/result.css" rel="stylesheet" />
 </head>
-<body>
+<body onmousedown ="hideAll();">
     <h2>FormResults</h2>
     <div>
         <p>
@@ -37,10 +37,51 @@
     </div>
 
 
+    <div onmouseover="showMajor(true);" runat="server">
+        111
+    </div>
+
+    <div class="major" id="major_div" style="visibility: hidden; width: 200px; height: 200px; margin: 0px, 0px, 0px, 0px" runat="server">
+        <div onmouseover="showUniv(true);" style= "position: relative; left: 10px; top: 25px" runat="server">
+            111
+        </div>
+        <img src="../../Pictures/dialogbox.png" style="width: 200px; height: 200px; filter: alpha(opacity=40);" runat="server">
+    </div>
+
+    <div class="university" id="univ_div" style="visibility: hidden; width: 200px; height: 200px; margin: 0px, 0px, 0px, 0px" runat="server">
+        <img src="../../Pictures/dialogbox.png" style="width: 200px; height: 200px; filter: alpha(opacity=40);" runat="server">
+    </div>
+
+    
+   
+    <script>
+        function showMajor(display) {
+            if (display) {
+                document.getElementById('major_div').style.visibility = 'visible';
+            }
+            else {
+                document.getElementById('major_div').style.visibility = 'hidden';
+            }
+        }
 
 
-    <asp:Image ID="ImagePreview" runat="server"  Width="62px" Height="62px" />
-    <script>ImagePreview.Attributes.Item("onMouseOver") = "javascript:window.open('localhost','newWindow','width=200,height=200')";</script>
+        function showUniv(display) {
+            if (display) {
+                document.getElementById('univ_div').style.visibility = 'visible';
+            }
+            else {
+                document.getElementById('univ_div').style.visibility = 'hidden';
+            }
+        }
+
+        function hideAll() {
+            showMajor(false);
+            showUniv(false);
+        }
+    </script>
+
+    
+    
 
 
 

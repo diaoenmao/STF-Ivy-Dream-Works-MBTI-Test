@@ -30,3 +30,16 @@ pre{
     float: left;
 
 }
+
+.university{
+    position: absolute;
+    z-index : 3;
+    top: 750px;
+    left: 50px;
+}
+
+.major{
+    position: absolute;
+    z-index : 2;
+    filter: alpha(opacity=40);
+}
