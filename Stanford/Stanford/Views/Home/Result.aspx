@@ -12,6 +12,7 @@
     <title>Result</title>
     <link href="../../Css/result.css" rel="stylesheet" />
 </head>
+
 <body onmousedown ="hideAll();">
     <h2>FormResults</h2>
     <div>
@@ -37,16 +38,20 @@
     </div>
 
 
-    <div onmouseover="showMajor(true);" runat="server">
+    <div id="job1" onmouseover="showMajor(true, 'job1');" runat="server">
         111
     </div>
 
+
+    <!-- these divs will be created dynamicly -->
     <div class="major" id="major_div" style="visibility: hidden; width: 200px; height: 200px; margin: 0px, 0px, 0px, 0px" runat="server">
-        <div onmouseover="showUniv(true);" style= "position: relative; left: 10px; top: 25px" runat="server">
+        <div id="major" onmouseover="showUniv(true, 'major');" style= "position: relative; left: 10px; top: 25px" runat="server">
             111
         </div>
         <img src="../../Pictures/dialogbox.png" style="width: 200px; height: 200px; filter: alpha(opacity=40);" runat="server">
     </div>
+
+
 
     <div class="university" id="univ_div" style="visibility: hidden; width: 200px; height: 200px; margin: 0px, 0px, 0px, 0px" runat="server">
         <img src="../../Pictures/dialogbox.png" style="width: 200px; height: 200px; filter: alpha(opacity=40);" runat="server">
@@ -55,9 +60,16 @@
     
    
     <script>
-        function showMajor(display) {
+        function showMajor(display, jobId) {
             if (display) {
                 document.getElementById('major_div').style.visibility = 'visible';
+
+                var jobDiv = document.getElementById(jobId);
+                var majorDiv = document.getElementById('major_div');
+                var rect = jobDiv.getBoundingClientRect();
+
+                majorDiv.style.left = (rect.left + 10)+'px';
+                majorDiv.style.top = (rect.top + 10)+'px';
             }
             else {
                 document.getElementById('major_div').style.visibility = 'hidden';
@@ -65,9 +77,17 @@
         }
 
 
-        function showUniv(display) {
+        function showUniv(display, majorId) {
             if (display) {
                 document.getElementById('univ_div').style.visibility = 'visible';
+
+                var majorDiv = document.getElementById(majorId);
+                var univDiv = document.getElementById('univ_div');
+                var rect = majorDiv.getBoundingClientRect();
+
+                univDiv.style.left = (rect.left + 20) + 'px';
+                univDiv.style.top = (rect.top + 20) + 'px';
+
             }
             else {
                 document.getElementById('univ_div').style.visibility = 'hidden';
@@ -75,7 +95,7 @@
         }
 
         function hideAll() {
-            showMajor(false);
+            showMajor(false, 'Major');
             showUniv(false);
         }
     </script>
