@@ -13,7 +13,10 @@
     <link href="../../Css/result.css" rel="stylesheet" />
 </head>
 
-<body onmousedown ="hideAll();">
+<body>
+
+    <div onmousedown ="hideAll();" style="position: absolute; height:100%; width: 100%; background-color:transparent; z-index : 1"></div>
+
     <h2>FormResults</h2>
     <div>
         <p>
@@ -38,7 +41,7 @@
     </div>
 
 
-    <div id="job1" onmouseover="showMajor(true, 'job1');" runat="server">
+    <div id="job1" class="job" onmousedown="showMajor(true, 'job1');" runat="server">
         111
     </div>
 

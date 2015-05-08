@@ -140,3 +140,5 @@ C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\bin\System.
 C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\obj\Debug\Stanford.csprojResolveAssemblyReference.cache
 C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\obj\Debug\Stanford.dll
 C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\obj\Debug\Stanford.pdb
+C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\obj\Debug\Stanford.Migrations.initial.resources
+C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\obj\Debug\Stanford.csproj.GenerateResource.Cache

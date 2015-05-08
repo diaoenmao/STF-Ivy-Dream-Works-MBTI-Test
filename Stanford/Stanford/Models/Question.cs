@@ -11,6 +11,7 @@ namespace Stanford.Models
         public String Q { get; set; }
         public String A { get; set; }
         public String B { get; set; }
+
         public Question(String Q, String A, String B)
         {
             this.Q = Q;

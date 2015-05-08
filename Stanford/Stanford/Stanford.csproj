@@ -131,10 +131,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505080115397_initial.cs" />
+    <Compile Include="Migrations\201505080115397_initial.Designer.cs">
+      <DependentUpon>201505080115397_initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Answer.cs" />
     <Compile Include="Models\AnswerList.cs" />
     <Compile Include="Models\AnswerProcessor.cs" />
+    <Compile Include="Models\ChrTrait.cs" />
+    <Compile Include="Models\Major.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\QuestionList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -239,6 +245,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201505080115397_initial.resx">
+      <DependentUpon>201505080115397_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

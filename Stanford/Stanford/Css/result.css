@@ -22,24 +22,24 @@ pre{
 
 .job:hover{
     color:red;
-    
 }
 
 .job{
+    position:absolute;
     white-space:nowrap;
     float: left;
-
+    z-index : 2;
 }
 
 .university{
     position: absolute;
-    z-index : 3;
+    z-index : 4;
     top: 750px;
     left: 50px;
 }
 
 .major{
     position: absolute;
-    z-index : 2;
+    z-index : 3;
     filter: alpha(opacity=40);
 }

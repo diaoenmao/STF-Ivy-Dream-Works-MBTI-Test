@@ -1,6 +1,7 @@
 namespace Stanford.Migrations
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -28,7 +29,7 @@ namespace Stanford.Migrations
             //    );
             //
 
-
+            
             context.Questions.AddOrUpdate(
                     p => p.Id,
                     new Question { Id = 1, Q = "当你要外出一整天，你会", A = "计划你要做什么和在什么时候做", B = "说去就去" },
@@ -128,6 +129,22 @@ namespace Stanford.Migrations
 
 
                 );
+
+
+
+            List<Major> majors = new List<Major>();
+            majors.Add(new Major("Physics"));
+            majors.Add(new Major("Maths"));
+            majors.Add(new Major("Chemistry"));
+            ChrTrait ISTJ = new ChrTrait(1, "ISTJ", majors);
+            context.Traits.AddOrUpdate(
+                p=>p.Id,
+                ISTJ
+
+
+                );
+
+
         }
     }
 }

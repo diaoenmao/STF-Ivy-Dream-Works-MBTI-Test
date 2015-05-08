@@ -13,7 +13,7 @@ namespace Stanford.Context
         }
 
         public DbSet<Question> Questions { get; set; }
-        
+        public DbSet<ChrTrait> Traits { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
