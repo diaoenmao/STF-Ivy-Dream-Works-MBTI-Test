@@ -131,9 +131,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201505080115397_initial.cs" />
-    <Compile Include="Migrations\201505080115397_initial.Designer.cs">
-      <DependentUpon>201505080115397_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201505090120334_initial.cs" />
+    <Compile Include="Migrations\201505090120334_initial.Designer.cs">
+      <DependentUpon>201505090120334_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Answer.cs" />
@@ -247,8 +247,8 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201505080115397_initial.resx">
-      <DependentUpon>201505080115397_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201505090120334_initial.resx">
+      <DependentUpon>201505090120334_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

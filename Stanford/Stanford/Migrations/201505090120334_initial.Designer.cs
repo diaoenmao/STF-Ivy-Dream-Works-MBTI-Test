@@ -11,7 +11,7 @@ namespace Stanford.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201505080115397_initial"; }
+            get { return "201505090120334_initial"; }
         }
         
         string IMigrationMetadata.Source

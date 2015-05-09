@@ -9,15 +9,15 @@ namespace Stanford.Models
 {
     public class ChrTrait
     {
-        public int Id {get; set;}
+        public int Id { get; set; }
         public string name { get; set; }
-        public List<Major> majors { get; set; }
+        public string majorsStr { get; set; }
 
-        public ChrTrait(int Id, string name, List<Major> majors)
+        public ChrTrait(int Id, string name, string majorsStr)
         {
             this.Id = Id;
             this.name = name;
-            this.majors = majors;
+            this.majorsStr = majorsStr;
         }
 
         public ChrTrait() {}

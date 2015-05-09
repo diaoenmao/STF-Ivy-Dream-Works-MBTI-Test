@@ -125,23 +125,19 @@ namespace Stanford.Migrations
                     new Question { Id = 91, Q = "哪一个词语更合你心意？", A = "全心投入", B = "有决心的" },
                     new Question { Id = 92, Q = "哪一个词语更合你心意？", A = "能干", B = "仁慈" },
                     new Question { Id = 93, Q = "哪一个词语更合你心意？", A = "实际", B = "创新" }
-
-
-
                 );
 
 
 
             List<Major> majors = new List<Major>();
-            majors.Add(new Major("Physics"));
-            majors.Add(new Major("Maths"));
-            majors.Add(new Major("Chemistry"));
-            ChrTrait ISTJ = new ChrTrait(1, "ISTJ", majors);
+            //majors.Add(new Major("Physics"));
+            //majors.Add(new Major("Maths"));
+            //majors.Add(new Major("Chemistry"));
+            ChrTrait INFJ = new ChrTrait(1, "INFJ", "Physics,Maths,Chemistry");
+
             context.Traits.AddOrUpdate(
                 p=>p.Id,
-                ISTJ
-
-
+                INFJ
                 );
 
 

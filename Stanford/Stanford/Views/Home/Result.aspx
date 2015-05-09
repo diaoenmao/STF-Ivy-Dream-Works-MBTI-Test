@@ -49,7 +49,8 @@
     <!-- these divs will be created dynamicly -->
     <div class="major" id="major_div" style="visibility: hidden; width: 200px; height: 200px; margin: 0px, 0px, 0px, 0px" runat="server">
         <div id="major" onmouseover="showUniv(true, 'major');" style= "position: relative; left: 10px; top: 25px" runat="server">
-            111
+
+                <pre><%= Server.HtmlDecode(Html.Encode(ViewData["major"])) %></pre>
         </div>
         <img src="../../Pictures/dialogbox.png" style="width: 200px; height: 200px; filter: alpha(opacity=40);" runat="server">
     </div>

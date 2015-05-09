@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Stanford.Context;
+using System.Data.Entity;
 
 namespace Stanford.Models
 {
     public class AnswerProcessor
     {
+        QuestionContext questionContext = new QuestionContext();
+        
         public int Id { get; set; }
         public int E = 0;
         public int I = 0;
@@ -19,6 +23,7 @@ namespace Stanford.Models
         public string[] arr = new string[4];
         public List<String> process(AnswerList answerList)
         {
+            DbSet<ChrTrait> traits = questionContext.Traits;
             List<Answer> alist = answerList.getList();
             this.calculate(alist);
             arr[0] = (I >= E) ? "I" : "E";
@@ -41,6 +46,10 @@ namespace Stanford.Models
                 output.Add("工商业领域、政府机构金融银行业、政府机构、技术领域、医务领域");
 
                 output.Add("<div class=\"job\">审计师、会计、财务经理、办公室行政管理、后勤和供应管理、中层经理、公务（法律、税务）执行人员等；银行信贷员、成本估价师、保险精算师、税务经纪人、税务检查员等；机械、电气工程师、计算机程序员、数据库管理员、地质、气象学家、法律研究者、律师等；外科医生、药剂师、实验室技术人员、牙科医生、医学研究员等");
+
+                
+                
+                
 
                 return output;
             }
@@ -72,6 +81,18 @@ namespace Stanford.Models
                        "                9.有组织且果断地履行其愿景。");
                 output.Add("咨询、教育、科研等领域文化、艺术、设计等领域");
                 output.Add("<div class=\"job\">心理咨询工作者、</div><div class=\"job\">心理诊疗师、</div>职业指导顾问、大学教师（人文学科、艺术类）、心理学、教育学、社会学、哲学及其它领域的研究人员等；作家、诗人、剧作家、电影编剧、电影导演、画家、雕塑家、音乐家、艺术顾问、建筑师、设计师等");
+
+
+                ChrTrait INFJ = traits.Find(1);
+                String strResult = "<ol>";
+                List<String> majors = INFJ.majorsStr.Split(',').ToList<String>();
+                foreach (String major in majors){
+                    strResult = String.Concat(strResult, "<li>" + major + "</li>");
+                }
+                strResult = String.Concat(strResult, "</ol>");
+                
+                
+                output.Add(strResult);
                 return output;
             }
             else if (result.Equals("INTJ"))

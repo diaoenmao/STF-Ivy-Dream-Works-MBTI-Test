@@ -88,7 +88,10 @@ namespace Stanford.Controllers
             ViewData["description"] = output[1];
             ViewData["area"] = output[2];
             ViewData["job"] = output[3];
+            ViewData["major"] = output[4];
             return View("Result");
         }
+        // <form action="/Home/new" method="post">  public ActionResult new(
+
     }
 }
