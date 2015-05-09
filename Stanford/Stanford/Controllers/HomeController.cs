@@ -56,7 +56,7 @@ namespace Stanford.Controllers
             string q81, string q82, string q83, string q84,
             string q85, string q86, string q87, string q88,
             string q89, string q90, string q91, string q92,
-            string q93)
+            string q93, string majorSelected)
         {
             answerList.add(q1); answerList.add(q2); answerList.add(q3); answerList.add(q4);
             answerList.add(q5); answerList.add(q6); answerList.add(q7); answerList.add(q8);
@@ -88,6 +88,10 @@ namespace Stanford.Controllers
             ViewData["description"] = output[1];
             ViewData["area"] = output[2];
             ViewData["job"] = output[3];
+            ViewData["major"] = majorSelected;
+
+
+
             return View("Result");
         }
         // <form action="/Home/new" method="post">  public ActionResult new(

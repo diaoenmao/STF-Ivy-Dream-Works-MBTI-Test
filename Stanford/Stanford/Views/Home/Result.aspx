@@ -46,7 +46,7 @@
     </div>
      -->
 
-    <form id= "jobForm" action="/Home/Result/Major" method="post">
+    <form id= "jobForm" action="/Home/Result" method="post">
         Major selected : <input id="majorSelected" type="text" name="majorSelected" value="">
     </form>
 
@@ -115,11 +115,5 @@
             showUniv(false);
         }
     </script>
-
-    
-    
-
-
-
 </body>
 </html>
