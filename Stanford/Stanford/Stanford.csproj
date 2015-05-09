@@ -135,6 +135,10 @@
     <Compile Include="Migrations\201505090120334_initial.Designer.cs">
       <DependentUpon>201505090120334_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505091745157_initial1.cs" />
+    <Compile Include="Migrations\201505091745157_initial1.Designer.cs">
+      <DependentUpon>201505091745157_initial1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Answer.cs" />
     <Compile Include="Models\AnswerList.cs" />
@@ -249,6 +253,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201505090120334_initial.resx">
       <DependentUpon>201505090120334_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505091745157_initial1.resx">
+      <DependentUpon>201505091745157_initial1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -80,19 +80,14 @@ namespace Stanford.Models
                        "                8.光明正大且坚信其价值观。<br />" +
                        "                9.有组织且果断地履行其愿景。");
                 output.Add("咨询、教育、科研等领域文化、艺术、设计等领域");
-                output.Add("<div class=\"job\">心理咨询工作者、</div><div class=\"job\">心理诊疗师、</div>职业指导顾问、大学教师（人文学科、艺术类）、心理学、教育学、社会学、哲学及其它领域的研究人员等；作家、诗人、剧作家、电影编剧、电影导演、画家、雕塑家、音乐家、艺术顾问、建筑师、设计师等");
-
 
                 ChrTrait INFJ = traits.Find(1);
-                String strResult = "<ol>";
-                List<String> majors = INFJ.majorsStr.Split(',').ToList<String>();
-                foreach (String major in majors){
-                    strResult = String.Concat(strResult, "<li>" + major + "</li>");
+                List<String> jobs = INFJ.jobsStr.Split(',').ToList<String>();
+                String resultStr = "";
+                foreach (String job in jobs){
+                    resultStr = String.Concat(resultStr, "<div id=\"" + job + "\" class=\"job\" onmousedown=\"showMajor(true, \'" + job + "\');\">" + job + "   </div>");
                 }
-                strResult = String.Concat(strResult, "</ol>");
-                
-                
-                output.Add(strResult);
+                output.Add(resultStr);
                 return output;
             }
             else if (result.Equals("INTJ"))

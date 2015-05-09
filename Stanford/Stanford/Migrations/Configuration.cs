@@ -133,7 +133,7 @@ namespace Stanford.Migrations
             //majors.Add(new Major("Physics"));
             //majors.Add(new Major("Maths"));
             //majors.Add(new Major("Chemistry"));
-            ChrTrait INFJ = new ChrTrait(1, "INFJ", "Physics,Maths,Chemistry");
+            ChrTrait INFJ = new ChrTrait(1, "INFJ", "心理咨询工作者,心理诊疗师,职业指导顾问,大学教师(人文学科、艺术类),心理学,教育学,社会学,哲学及其它领域的研究人员,作家,诗人,剧作家,电影编剧,电影导演,画家,雕塑家,音乐家,艺术顾问,建筑师,设计师");
 
             context.Traits.AddOrUpdate(
                 p=>p.Id,

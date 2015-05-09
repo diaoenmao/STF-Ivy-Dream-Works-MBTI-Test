@@ -11,13 +11,13 @@ namespace Stanford.Models
     {
         public int Id { get; set; }
         public string name { get; set; }
-        public string majorsStr { get; set; }
+        public string jobsStr { get; set; }
 
-        public ChrTrait(int Id, string name, string majorsStr)
+        public ChrTrait(int Id, string name, string jobsStr)
         {
             this.Id = Id;
             this.name = name;
-            this.majorsStr = majorsStr;
+            this.jobsStr = jobsStr;
         }
 
         public ChrTrait() {}

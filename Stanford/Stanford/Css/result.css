@@ -13,7 +13,7 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     width: 30%;
-
+    margin: 0px, 0px, 0px, 0px;
 }
 
 pre{
@@ -25,10 +25,7 @@ pre{
 }
 
 .job{
-    position:absolute;
-    white-space:nowrap;
     float: left;
-    z-index : 2;
 }
 
 .university{

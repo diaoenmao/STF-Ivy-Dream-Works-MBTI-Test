@@ -15,7 +15,7 @@
 
 <body>
 
-    <div onmousedown ="hideAll();" style="position: absolute; height:100%; width: 100%; background-color:transparent; z-index : 1"></div>
+    <div onmousedown ="hideAll();" style="position: absolute; height:100%; width: 100%; background-color:transparent; z-index : -1"></div>
 
     <h2>FormResults</h2>
     <div>
@@ -38,19 +38,23 @@
                 <pre><%= Server.HtmlDecode(Html.Encode(ViewData["job"])) %></pre>
             </div>
         </div>
-    </div>
+    </div> 
 
-
+    <!-- TEMPLATE FOR A JOB
     <div id="job1" class="job" onmousedown="showMajor(true, 'job1');" runat="server">
         111
     </div>
+     -->
+
+    <form id= "jobForm" action="/Home/Major" method="post">
+        Major selected : <input id="majorSelected" type="text" name="majorSelected" value="">
+    </form>
 
 
     <!-- these divs will be created dynamicly -->
     <div class="major" id="major_div" style="visibility: hidden; width: 200px; height: 200px; margin: 0px, 0px, 0px, 0px" runat="server">
         <div id="major" onmouseover="showUniv(true, 'major');" style= "position: relative; left: 10px; top: 25px" runat="server">
-
-                <pre><%= Server.HtmlDecode(Html.Encode(ViewData["major"])) %></pre>
+            I selected <pre><%= Server.HtmlDecode(Html.Encode(ViewData["major"])) %></pre>
         </div>
         <img src="../../Pictures/dialogbox.png" style="width: 200px; height: 200px; filter: alpha(opacity=40);" runat="server">
     </div>
@@ -61,7 +65,8 @@
         <img src="../../Pictures/dialogbox.png" style="width: 200px; height: 200px; filter: alpha(opacity=40);" runat="server">
     </div>
 
-    
+
+
    
     <script>
         function showMajor(display, jobId) {
@@ -69,6 +74,13 @@
                 document.getElementById('major_div').style.visibility = 'visible';
 
                 var jobDiv = document.getElementById(jobId);
+                //set input value
+                var input = document.getElementById("majorSelected");
+                input.value = jobId;
+                //submit job form
+                var jobForm = document.getElementById("jobForm");
+                jobForm.submit();
+
                 var majorDiv = document.getElementById('major_div');
                 var rect = jobDiv.getBoundingClientRect();
 
