@@ -46,7 +46,7 @@
     </div>
      -->
 
-    <form id= "jobForm" action="/Home/Major" method="post">
+    <form id= "jobForm" action="/Home/Result/Major" method="post">
         Major selected : <input id="majorSelected" type="text" name="majorSelected" value="">
     </form>
 
