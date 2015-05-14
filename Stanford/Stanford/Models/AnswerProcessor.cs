@@ -21,9 +21,8 @@ namespace Stanford.Models
         public int J = 0;
         public int P = 0;
         public string[] arr = new string[4];
-        public List<String> process(AnswerList answerList)
+        public List<String> process(AnswerList answerList, String jobSelected)
         {
-            DbSet<ChrTrait> traits = questionContext.Traits;
             List<Answer> alist = answerList.getList();
             this.calculate(alist);
             arr[0] = (I >= E) ? "I" : "E";
@@ -80,14 +79,14 @@ namespace Stanford.Models
                        "                8.光明正大且坚信其价值观。<br />" +
                        "                9.有组织且果断地履行其愿景。");
                 output.Add("咨询、教育、科研等领域文化、艺术、设计等领域");
-
-                ChrTrait INFJ = traits.Find(1);
+                ChrTrait INFJ = questionContext.Traits.Find(1);
                 List<String> jobs = INFJ.jobsStr.Split(',').ToList<String>();
-                String resultStr = "";
+                String jobResultStr = "";
                 foreach (String job in jobs){
-                    resultStr = String.Concat(resultStr, "<div id=\"" + job + "\" class=\"job\" onmousedown=\"showMajor(true, \'" + job + "\');\">" + job + "   </div>");
+                    jobResultStr = String.Concat(jobResultStr, "<div id=\"" + job + "\" class=\"job\" onmousedown=\"showMajor(true, \'" + job + "\'); submitJob(\'" + job + "\');\">" + job + "   </div>");
                 }
-                output.Add(resultStr);
+                output.Add(jobResultStr);
+
                 return output;
             }
             else if (result.Equals("INTJ"))

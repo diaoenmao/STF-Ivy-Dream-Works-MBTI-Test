@@ -5,13 +5,11 @@ using System.Web;
 using System.Web.Mvc;
 using Stanford.Models;
 using Stanford.Context;
+using System.Web.Services;
 namespace Stanford.Controllers
 {
     public class HomeController : Controller
     {
-
-
-
         QuestionContext questionDb = new QuestionContext();
         //
         // GET: /Home/
@@ -56,7 +54,7 @@ namespace Stanford.Controllers
             string q81, string q82, string q83, string q84,
             string q85, string q86, string q87, string q88,
             string q89, string q90, string q91, string q92,
-            string q93, string majorSelected)
+            string q93, string jobSelected)
         {
             answerList.add(q1); answerList.add(q2); answerList.add(q3); answerList.add(q4);
             answerList.add(q5); answerList.add(q6); answerList.add(q7); answerList.add(q8);
@@ -82,31 +80,38 @@ namespace Stanford.Controllers
             answerList.add(q85); answerList.add(q86); answerList.add(q87); answerList.add(q88);
             answerList.add(q89); answerList.add(q90); answerList.add(q91); answerList.add(q92);
             answerList.add(q93);
+
             AnswerProcessor processor = new AnswerProcessor();
-            List<String> output = processor.process(answerList);
+            List<String> output = processor.process(answerList, jobSelected);
             ViewData["type"] = output[0];
             ViewData["description"] = output[1];
             ViewData["area"] = output[2];
             ViewData["job"] = output[3];
-            ViewData["major"] = majorSelected;
+            if(jobSelected != null){
+                ViewData["major"] = questionDb.Jobs.Find(jobSelected).majorsStr;
+            }
+            else
+            {
+                ViewData["major"] = "Nothing selected";
+            }
+            
+            return View(questionDb.Traits.Find(1));
 
-
-
-            return View("Result");
         }
         // <form action="/Home/new" method="post">  public ActionResult new(
 
-
-
-        public ActionResult Major(String major)
+        [WebMethod]
+        public static int returnOne()
         {
-
-
-
-            ViewData["major"] = major;
-            return View("Major");
+            return 1;
         }
 
-
+        [HttpPost]
+        public ActionResult Contact(string message)
+        {
+            ViewData["Message"] = "Thanks, we got your message!";
+            return PartialView("_ContactThanks");
+        }
     }
+    
 }

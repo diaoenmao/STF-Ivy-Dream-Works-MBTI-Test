@@ -131,22 +131,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201505090120334_initial.cs" />
-    <Compile Include="Migrations\201505090120334_initial.Designer.cs">
-      <DependentUpon>201505090120334_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201505091745157_initial1.cs" />
-    <Compile Include="Migrations\201505091745157_initial1.Designer.cs">
-      <DependentUpon>201505091745157_initial1.cs</DependentUpon>
+    <Compile Include="Migrations\201505102305500_initial.cs" />
+    <Compile Include="Migrations\201505102305500_initial.Designer.cs">
+      <DependentUpon>201505102305500_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Answer.cs" />
     <Compile Include="Models\AnswerList.cs" />
     <Compile Include="Models\AnswerProcessor.cs" />
     <Compile Include="Models\ChrTrait.cs" />
+    <Compile Include="Models\Job.cs" />
     <Compile Include="Models\Major.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\QuestionList.cs" />
+    <Compile Include="Models\University.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -230,6 +228,7 @@
     <Content Include="Views\Home\Result.aspx" />
     <Content Include="Views\Home\Test.aspx" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Home\_ContactThanks.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -251,11 +250,8 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201505090120334_initial.resx">
-      <DependentUpon>201505090120334_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201505091745157_initial1.resx">
-      <DependentUpon>201505091745157_initial1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201505102305500_initial.resx">
+      <DependentUpon>201505102305500_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

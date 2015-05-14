@@ -142,4 +142,3 @@ C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\obj\Debug\S
 C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\obj\Debug\Stanford.pdb
 C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\obj\Debug\Stanford.Migrations.initial.resources
 C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\obj\Debug\Stanford.csproj.GenerateResource.Cache
-C:\Users\lipei_000\Desktop\STF\STF-Ivy-Dream-Works\Stanford\Stanford\obj\Debug\Stanford.Migrations.initial1.resources

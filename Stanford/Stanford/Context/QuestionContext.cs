@@ -14,6 +14,8 @@ namespace Stanford.Context
 
         public DbSet<Question> Questions { get; set; }
         public DbSet<ChrTrait> Traits { get; set; }
+        public DbSet<Job> Jobs { get; set; }
+        public DbSet<University> Universities { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -12,8 +12,9 @@ namespace Stanford.Models
         public int Id { get; set; }
         public string name { get; set; }
         public string jobsStr { get; set; }
+        public List<Job> jobs { get; set;}
 
-        public ChrTrait(int Id, string name, string jobsStr)
+        public ChrTrait(int Id, string name, string jobsStr, List<Job> jobs)
         {
             this.Id = Id;
             this.name = name;
