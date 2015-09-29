@@ -22,7 +22,7 @@ STF Ivy Dream Works MBTI Test is a website for testing academic abilities and ps
 
 ## Credits
 
-*Enmao Diao
+*Enmao Diao  
 Peilin Li*
 
 ## License
